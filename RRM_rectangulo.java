@@ -1,9 +1,9 @@
 public class RRM_rectangulo {
     // Clase
-    int id = 1;
-    double ladoA = 10.1;
-    double ladoB = 10.2;
-    String color = "Naranja";
+    int id;
+    double ladoA;
+    double ladoB;
+    String color;
 
     public RRM_rectangulo(Integer id, double ladoA, double ladoB, String color) {
         // Constructor
@@ -49,5 +49,13 @@ public class RRM_rectangulo {
     @Override
     public String toString() {
         return "RRM_circulo [id=" + id + ", ladoA=" + ladoA + ", ladoB=" + ladoB + ", color=" + color + "]";
+    }
+
+    private static void extracted(RRM_rectangulo rectangulo1) {
+        // Calcula el area rectangulo ladoA * laboB
+        double ladoA = rectangulo1.getladoA();
+        double ladoB = rectangulo1.getladoB();
+        double area1 = ladoA * ladoB;
+        System.out.println("Area rectangulo: " + area1);
     }
 }

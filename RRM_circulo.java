@@ -1,8 +1,8 @@
 public class RRM_circulo {
     // Clase
-    int id = 1;
-    double radio = 10.1;
-    String color = "Naranja";
+    int id;
+    double radio;
+    String color;
 
     public RRM_circulo(Integer id, double radio, String color) {
         // Constructor
@@ -40,4 +40,9 @@ public class RRM_circulo {
     public String toString() {
         return "RRM_circulo [id=" + id + ", radio=" + radio + ", color=" + color + "]";
     }
+
+    private static void extracted(RRM_circulo circulo1) {
+    double radio1 = circulo1.getradio();
+    double area2 = radio1 * 3.14;
+    System.out.println("Area circulo: " + area2);
 }
